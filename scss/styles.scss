@@ -1,4 +1,5 @@
 @import"./utils/variables";
+@import"./utils/mixins";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap');
 
@@ -56,16 +57,10 @@ header{
 .explore__restaurant--search{
     padding: 0.5em 0em 2.5em 0em;
     button{
-        border: 1px;
-        border-radius: 60px;
-        padding: 1em;
-        color: white;
-        background: linear-gradient($secondary-color 20%, $primary-color 100%);
-        box-shadow: 4px 4px 6px #bbbaba;
+        @include button
     }
 }
 
 button:hover{
-        filter: brightness(110%);
-        box-shadow: 8px 8px 12px #727171;
+        @include buttonhover
 }

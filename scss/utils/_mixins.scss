@@ -1,0 +1,13 @@
+@mixin button {
+    border: 1px;
+    border-radius: 60px;
+    padding: 1em;
+    color: white;
+    background: linear-gradient($secondary-color 20%, $primary-color 100%);
+    box-shadow: 4px 4px 6px #bbbaba;
+}
+
+@mixin buttonhover{
+    filter: brightness(110%);
+    box-shadow: 8px 8px 12px #727171;
+}
