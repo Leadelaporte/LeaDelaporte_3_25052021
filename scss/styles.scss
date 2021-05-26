@@ -199,3 +199,24 @@ footer{
 .footer a:visited{
     color: white;
 }
+
+.box__heart .fas{
+    color:$secondary-color;
+    display: block;
+    background: -webkit-linear-gradient($secondary-color 20%, $primary-color 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.box__heart:hover{
+    .far{
+        display: none;
+    }
+}
+
+.far{
+    position: absolute;
+    background-color: white;
+}

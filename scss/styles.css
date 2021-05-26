@@ -207,4 +207,21 @@ footer h2 {
 
 .footer a:visited {
   color: white;
+}
+
+.box__heart .fas {
+  color: #FF79DA;
+  display: block;
+  background: -webkit-linear-gradient(#FF79DA 20%, #9356DC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box__heart:hover .far {
+  display: none;
+}
+
+.far {
+  position: absolute;
+  background-color: white;
 }/*# sourceMappingURL=styles.css.map */
