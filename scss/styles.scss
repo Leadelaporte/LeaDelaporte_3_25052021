@@ -212,11 +212,14 @@ footer{
 
 .box__heart:hover{
     .far{
-        display: none;
+        opacity: 0;
+        
     }
 }
 
 .far{
     position: absolute;
     background-color: white;
+    opacity: 1;
+    -webkit-transition:.4s ease-in-out;
 }

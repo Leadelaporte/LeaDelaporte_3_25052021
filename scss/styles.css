@@ -218,10 +218,12 @@ footer h2 {
 }
 
 .box__heart:hover .far {
-  display: none;
+  opacity: 0;
 }
 
 .far {
   position: absolute;
   background-color: white;
+  opacity: 1;
+  -webkit-transition: 0.4s ease-in-out;
 }/*# sourceMappingURL=styles.css.map */
