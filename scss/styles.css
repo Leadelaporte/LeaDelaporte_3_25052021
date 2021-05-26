@@ -212,7 +212,7 @@ footer h2 {
 .box__heart .fas {
   color: #FF79DA;
   display: block;
-  background: -webkit-linear-gradient(#FF79DA 20%, #9356DC 100%);
+  background: -webkit-linear-gradient(#9356DC 40%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

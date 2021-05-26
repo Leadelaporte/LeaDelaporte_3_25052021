@@ -203,7 +203,7 @@ footer{
 .box__heart .fas{
     color:$secondary-color;
     display: block;
-    background: -webkit-linear-gradient($secondary-color 20%, $primary-color 100%);
+    background: -webkit-linear-gradient($primary-color 40%, $secondary-color 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
