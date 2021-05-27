@@ -1,0 +1,130 @@
+@import"./utils/variables";
+@import"./utils/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap');
+
+body{
+    @include body;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.logo__return{
+    position: absolute;
+    left: 1.5em;
+    top: 1.5em;
+}
+
+.background{
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    height: 20em;
+    
+}
+
+.menu{
+    background-color: #F2F2F2;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -4.5em;
+    .menu__tilte{
+        padding-top: 0.5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 1.5em 0 1em;
+        p{
+            font-family: "Shrikhand", sans-serif;
+            font-size: 1.5em;
+        }
+    .far{
+        font-size: 1.5em;
+    }
+    .fas{
+        font-size: 1.5em;
+    }
+    }
+}
+
+.box__heart .fas{
+    color:$secondary-color;
+    display: block;
+    background: -webkit-linear-gradient($primary-color 40%, $secondary-color 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.box__heart:hover{
+    .far{
+        opacity: 0;
+    }
+}
+
+.far{
+    position: absolute;
+    background-color: #F2F2F2;
+    opacity: 1;
+    -webkit-transition:.4s ease-in-out;
+    margin-top: -1em;
+}
+
+.menu__starters{
+    position: relative;
+    padding-left: 1em;
+}
+
+.menu__starters::after{
+    @include aftermenu;
+}
+
+.menu__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    background: white;
+    border-radius: 15px;
+    width: 90%;
+    h2{
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+    p{
+        font-size: 0.8em;
+        margin-top: 0.5em;
+    }
+}
+
+.box__price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+
+
