@@ -105,6 +105,8 @@ header {
   background: white;
   border-radius: 15px;
   width: 90%;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 .box h2 {
   font-size: 1em;
@@ -115,15 +117,84 @@ header {
   margin-top: 0.5em;
 }
 
-.box__price {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .box__menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-left: 0.5em;
   margin-right: 0.5em;
+}
+
+.menu__dishes {
+  position: relative;
+  padding-left: 1em;
+}
+
+.menu__dishes::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #A4CCAE;
+  position: absolute;
+  top: 1.5em;
+}
+
+.menu__desserts {
+  position: relative;
+  padding-left: 1em;
+}
+
+.menu__desserts::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #A4CCAE;
+  position: absolute;
+  top: 1.5em;
+}
+
+.menu__button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3em;
+  padding-top: 1em;
+}
+
+button {
+  border: 1px;
+  border-radius: 60px;
+  padding: 1em 3em 1em 3em;
+  color: white;
+  background: linear-gradient(#FF79DA 20%, #9356DC 100%);
+  box-shadow: 4px 4px 6px #bbbaba;
+}
+
+button:hover {
+  filter: brightness(110%);
+  box-shadow: 8px 8px 12px #727171;
+}
+
+footer {
+  background-color: #3a3d3b;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+footer a {
+  color: white;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1em;
+}
+
+.footer__link i {
+  padding-right: 1em;
+  padding-bottom: 0.9em;
+}
+
+.footer a:visited {
+  color: white;
 }/*# sourceMappingURL=menustyles.css.map */
