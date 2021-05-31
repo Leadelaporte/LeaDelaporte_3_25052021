@@ -4,7 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap');
 
 body{
-    @include body;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-family: "roboto", sans-serif;
+    margin-bottom: 0;
 }
 
 a{
@@ -27,7 +31,7 @@ header{
 
 .logo__return{
     position: absolute;
-    left: 1.5em;
+    left: 15em;
     top: 1.5em;
 }
 
@@ -81,11 +85,12 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .box{
     background: white;
     border-radius: 15px;
-    width: 90%;
+    width: 70%;
     height: 4.5em;
     margin-bottom: 0.5em;
     margin-top: 0.5em;

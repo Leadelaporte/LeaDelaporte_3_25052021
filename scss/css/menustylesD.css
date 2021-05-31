@@ -3,6 +3,7 @@
 body {
   margin-left: auto;
   margin-right: auto;
+  width: 80%;
   font-family: "roboto", sans-serif;
   margin-bottom: 0;
 }
@@ -26,7 +27,7 @@ header {
 
 .logo__return {
   position: absolute;
-  left: 1.5em;
+  left: 15em;
   top: 1.5em;
 }
 
@@ -87,7 +88,7 @@ header {
 .box {
   background: white;
   border-radius: 15px;
-  width: 90%;
+  width: 70%;
   height: 4.5em;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
@@ -369,4 +370,4 @@ footer h2 {
 
 .footer a:visited {
   color: white;
-}/*# sourceMappingURL=menustylesT.css.map */
+}/*# sourceMappingURL=menustylesD.css.map */
