@@ -32,7 +32,7 @@ header {
 
 /* IMAGE */
 .background {
-  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -303,7 +303,7 @@ header {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(4em);
+    transform: scaleX(1);
   }
 }
 @keyframes slide {
@@ -311,7 +311,7 @@ header {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(4em);
+    transform: scaleX(1);
   }
 }
 @-webkit-keyframes slideprice {
@@ -369,4 +369,4 @@ footer h2 {
 
 .footer a:visited {
   color: white;
-}/*# sourceMappingURL=menu3styles.css.map */
+}/*# sourceMappingURL=menustyles.css.map */

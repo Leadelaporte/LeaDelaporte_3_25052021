@@ -32,7 +32,7 @@ header {
 
 /* IMAGE */
 .background {
-  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -46,7 +46,6 @@ header {
   border-top-right-radius: 30px;
   margin-top: -4.5em;
 }
-
 .menu .menu__tilte {
   padding-top: 0.5em;
   display: flex;
@@ -54,16 +53,13 @@ header {
   justify-content: space-between;
   margin: 0 1.5em 0 1em;
 }
-
 .menu .menu__tilte p {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.5em;
 }
-
 .menu .menu__tilte .far {
   font-size: 1.5em;
 }
-
 .menu .menu__tilte .fas {
   font-size: 1.5em;
 }
@@ -99,14 +95,12 @@ header {
   display: block;
   position: relative;
 }
-
 .box h2 {
   font-size: 1em;
   margin-bottom: 0;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .box p {
   margin-top: 0.5em;
   font-size: 1em;
@@ -206,52 +200,52 @@ header {
 }
 .box {
   -webkit-animation: FadeIn 2s both;
-  animation: FadeIn 2s both;
+          animation: FadeIn 2s both;
 }
 
 .fade-1 {
   -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .fade-2 {
   -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .fade-3 {
   -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .fade-4 {
   -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .fade-5 {
   -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .fade-6 {
   -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .fade-7 {
   -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 .fade-8 {
   -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .fade-9 {
   -webkit-animation-delay: 0.9s;
-  animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 /* ANIMATION VALIDATION MENU */
@@ -270,7 +264,7 @@ header {
   font-size: 30px;
   color: white;
   -webkit-animation: rotate 1s;
-  animation: rotate 1s;
+          animation: rotate 1s;
 }
 
 .box:hover .validation {
@@ -278,13 +272,13 @@ header {
   justify-content: center;
   align-items: center;
   -webkit-animation: slide 1s ease;
-  animation: slide 1s ease;
+          animation: slide 1s ease;
   transform-origin: right;
 }
 
 .box:hover .box__price {
   -webkit-animation: slideprice 1s both;
-  animation: slideprice 1s both;
+          animation: slideprice 1s both;
 }
 
 @-webkit-keyframes rotate {
@@ -295,6 +289,7 @@ header {
     transform: rotate(360deg);
   }
 }
+
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -308,7 +303,7 @@ header {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(4em);
+    transform: scaleX(1);
   }
 }
 @keyframes slide {
@@ -316,7 +311,7 @@ header {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(4em);
+    transform: scaleX(1);
   }
 }
 @-webkit-keyframes slideprice {
@@ -359,11 +354,9 @@ footer {
   padding-left: 1em;
   margin-bottom: 0;
 }
-
 footer a {
   color: white;
 }
-
 footer h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1em;
@@ -376,5 +369,4 @@ footer h2 {
 
 .footer a:visited {
   color: white;
-}
-/*# sourceMappingURL=menu4styles.css.map *//*# sourceMappingURL=menu4styles.css.map */
+}/*# sourceMappingURL=menu3styles.css.map */

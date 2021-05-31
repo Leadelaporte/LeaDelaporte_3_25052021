@@ -32,7 +32,7 @@ header {
 
 /* IMAGE */
 .background {
-  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -248,11 +248,6 @@ header {
           animation-delay: 0.9s;
 }
 
-.fade-10 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
 /* ANIMATION VALIDATION MENU */
 .box .validation {
   display: none;
@@ -308,7 +303,7 @@ header {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(4em);
+    transform: scaleX(1);
   }
 }
 @keyframes slide {
@@ -316,7 +311,7 @@ header {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(4em);
+    transform: scaleX(1);
   }
 }
 @-webkit-keyframes slideprice {
@@ -374,4 +369,4 @@ footer h2 {
 
 .footer a:visited {
   color: white;
-}/*# sourceMappingURL=menu2styles.css.map */
+}/*# sourceMappingURL=menustyles.css.map */

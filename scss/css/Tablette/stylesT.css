@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap");
+body {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "roboto", sans-serif;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.explore__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.3em;
+  margin-bottom: 0em;
+  padding: 1em 0em 1em 0em;
+  background-color: #e6e3e3;
+  border-top: #bbbaba solid;
+}
+.explore__search .explore__search--icon {
+  padding-right: 1em;
+}
+.explore__search #MaRecherche {
+  border: #e6e3e3 solid;
+  background-color: #e6e3e3;
+  width: 8.5em;
+}
+
+::-moz-placeholder {
+  color: black;
+}
+
+:-ms-input-placeholder {
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}
+
+.explore__restaurant {
+  background-color: #F2F2F2;
+  padding-top: 0.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.explore__restaurant h1 {
+  margin-bottom: 0.5em;
+}
+.explore__restaurant p {
+  margin-top: 0em;
+  color: #a7a7a7;
+}
+
+.explore__restaurant--search {
+  padding: 0.5em 0em 2.5em 0em;
+}
+.explore__restaurant--search button {
+  border: 1px;
+  border-radius: 60px;
+  padding: 1em;
+  color: white;
+  background: linear-gradient(#FF79DA 20%, #9356DC 100%);
+  box-shadow: 4px 4px 6px #bbbaba;
+}
+
+button:hover {
+  filter: brightness(110%);
+  box-shadow: 8px 8px 12px #727171;
+}
+
+.function {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.function__title {
+  padding-top: 1em;
+}
+
+.function__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+.function__card .card {
+  background-color: #F2F2F2;
+  padding: 1em;
+  border-radius: 60px;
+  margin: 0 1em 1em 1em;
+  box-shadow: 4px 4px 6px #bbbaba;
+}
+.function__card .card .card__number {
+  background-color: #9356DC;
+  color: white;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-radius: 60px;
+  font-size: 1.3em;
+  margin-right: 1em;
+}
+
+.card:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+
+.card__icon {
+  color: #a7a7a7;
+  margin-right: 2em;
+}
+
+.card:hover .card__icon {
+  color: #9356DC;
+}
+
+.restaurants {
+  background-color: #F2F2F2;
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+.restaurants .restaurants__title {
+  padding-top: 1em;
+  padding-left: 1em;
+}
+.restaurants .restaurants__box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: white;
+  margin: 1em 1em 1em 1.2em;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 4px 4px 6px #bbbaba;
+  width: 45%;
+}
+.box img {
+  width: 100%;
+  height: 8em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
+}
+.box .box__img--text {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: #487454;
+  background-color: #A4CCAE;
+  padding: 0.3em;
+  font-weight: bold;
+}
+
+.box__text h2 {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  font-size: 1.2em;
+}
+.box__text p {
+  margin-top: 0.3em;
+}
+
+.box__heart {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5em;
+}
+
+.box__text__heart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5em 0 0.5em;
+}
+
+footer {
+  background-color: #3a3d3b;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+footer a {
+  color: white;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1em;
+}
+
+.footer__link i {
+  padding-right: 1em;
+  padding-bottom: 0.9em;
+}
+
+.footer a:visited {
+  color: white;
+}
+
+.box__heart .fas {
+  color: #FF79DA;
+  display: block;
+  background: -webkit-linear-gradient(#9356DC 40%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box__heart:hover .far {
+  opacity: 0;
+}
+
+.far {
+  position: absolute;
+  background-color: white;
+  opacity: 1;
+  -webkit-transition: 0.4s ease-in-out;
+}
+
+.animation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9356DC;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #CD56DC;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FF79DA;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader__animation {
+  position: fixed;
+  z-index: 99;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: anim 3s forwards;
+          animation: anim 3s forwards;
+}
+
+@-webkit-keyframes anim {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes anim {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=stylesT.css.map */
