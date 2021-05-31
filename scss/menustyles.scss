@@ -91,6 +91,7 @@ header{
     margin-top: 0.5em;
     white-space: nowrap;
     display: block;
+    position: relative;
     h2{
         font-size: 1em;
         margin-bottom: 0;
@@ -108,10 +109,8 @@ header{
 
 .box__menu{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-left: 0.5em;
-    margin-right: 0.5em;
 }
 
 .menu__dishes{
@@ -142,8 +141,15 @@ header{
 .box__menu--menu{
     white-space: nowrap;
     overflow: hidden;
+    padding-right: 1em;
+
 }
 
+.box__price{
+    padding-top: 1em;
+    margin-right: 0.5em;
+    
+}
 /* ANIMATION COEUR */
 
 .box__heart .fas{
@@ -169,7 +175,7 @@ header{
     margin-top: -1em;
 }
 
-/* ANIMATION MENU */ 
+/* ANIMATION APPARITION MENU */ 
 
 @keyframes FadeIn{
     0% {
@@ -228,6 +234,63 @@ header{
 
 }
 
+/* ANIMATION VALIDATION MENU */ 
+
+.box .validation{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #A4CCAE;
+    height: 4.5em;
+    width: 4em;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.validation i{
+    font-size: 30px;
+    color: white;
+    animation: rotate 1s; 
+}
+
+.box:hover .validation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide 1s ease;
+    transform-origin: right;
+}
+
+.box:hover .box__price{
+    animation: slideprice 1s both;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes slide{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(4em);
+    }
+}
+
+@keyframes slideprice{
+    0%{
+        margin-right: 0;
+    }
+    100%{
+        margin-right: 5em;
+    }
+}
 /* BOUTTON */ 
 
 button{
@@ -267,8 +330,3 @@ footer{
 .footer a:visited{
     color: white;
 }
-
-
-
-
- 
