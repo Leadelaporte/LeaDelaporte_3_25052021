@@ -16,6 +16,7 @@ a:visited {
   color: black;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: center;
@@ -29,6 +30,7 @@ header {
   top: 1.5em;
 }
 
+/* IMAGE */
 .background {
   background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
@@ -37,6 +39,7 @@ header {
   height: 20em;
 }
 
+/* MENU */
 .menu {
   background-color: #F2F2F2;
   border-top-left-radius: 30px;
@@ -59,26 +62,6 @@ header {
 }
 .menu .menu__tilte .fas {
   font-size: 1.5em;
-}
-
-.box__heart .fas {
-  color: #FF79DA;
-  display: block;
-  background: -webkit-linear-gradient(#9356DC 40%, #FF79DA 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.box__heart:hover .far {
-  opacity: 0;
-}
-
-.far {
-  position: absolute;
-  background-color: #F2F2F2;
-  opacity: 1;
-  -webkit-transition: 0.4s ease-in-out;
-  margin-top: -1em;
 }
 
 .menu__starters {
@@ -105,16 +88,23 @@ header {
   background: white;
   border-radius: 15px;
   width: 90%;
+  height: 4.5em;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
+  white-space: nowrap;
+  display: block;
 }
 .box h2 {
   font-size: 1em;
   margin-bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .box p {
-  font-size: 0.8em;
   margin-top: 0.5em;
+  font-size: 1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .box__menu {
@@ -160,45 +150,33 @@ header {
   padding-top: 1em;
 }
 
-button {
-  border: 1px;
-  border-radius: 60px;
-  padding: 1em 3em 1em 3em;
-  color: white;
-  background: linear-gradient(#FF79DA 20%, #9356DC 100%);
-  box-shadow: 4px 4px 6px #bbbaba;
+.box__menu--menu {
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-button:hover {
-  filter: brightness(110%);
-  box-shadow: 8px 8px 12px #727171;
+/* ANIMATION COEUR */
+.box__heart .fas {
+  color: #FF79DA;
+  display: block;
+  background: -webkit-linear-gradient(#9356DC 40%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-footer {
-  background-color: #3a3d3b;
-  color: white;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  margin-bottom: 0;
-}
-footer a {
-  color: white;
-}
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 1em;
+.box__heart:hover .far {
+  opacity: 0;
 }
 
-.footer__link i {
-  padding-right: 1em;
-  padding-bottom: 0.9em;
+.far {
+  position: absolute;
+  background-color: #F2F2F2;
+  opacity: 1;
+  -webkit-transition: 0.4s ease-in-out;
+  margin-top: -1em;
 }
 
-.footer a:visited {
-  color: white;
-}
-
+/* ANIMATION MENU */
 @-webkit-keyframes FadeIn {
   0% {
     opacity: 0;
@@ -207,7 +185,6 @@ footer h2 {
     opacity: 1;
   }
 }
-
 @keyframes FadeIn {
   0% {
     opacity: 0;
@@ -264,4 +241,45 @@ footer h2 {
 .fade-9 {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
+}
+
+/* BOUTTON */
+button {
+  border: 1px;
+  border-radius: 60px;
+  padding: 1em 3em 1em 3em;
+  color: white;
+  background: linear-gradient(#FF79DA 20%, #9356DC 100%);
+  box-shadow: 4px 4px 6px #bbbaba;
+}
+
+button:hover {
+  filter: brightness(110%);
+  box-shadow: 8px 8px 12px #727171;
+}
+
+/* FOOTER */
+footer {
+  background-color: #3a3d3b;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+footer a {
+  color: white;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1em;
+}
+
+.footer__link i {
+  padding-right: 1em;
+  padding-bottom: 0.9em;
+}
+
+.footer a:visited {
+  color: white;
 }/*# sourceMappingURL=menustyles.css.map */
