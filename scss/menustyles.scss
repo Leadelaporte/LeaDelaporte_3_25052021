@@ -183,3 +183,60 @@ footer{
 .footer a:visited{
     color: white;
 }
+
+@keyframes FadeIn{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.box{
+    animation: FadeIn 2s both;
+}
+
+.fade-1{
+    animation-delay: 0.1s;
+}
+
+.fade-2{
+    animation-delay: 0.2s;
+
+}
+
+.fade-3{
+    animation-delay: 0.3s;
+
+}
+
+.fade-4{
+    animation-delay: 0.4s;
+
+}
+
+.fade-5{
+    animation-delay: 0.5s;
+
+}
+
+.fade-6{
+    animation-delay: 0.6s;
+
+}
+
+.fade-7{
+    animation-delay: 0.7s;
+
+}
+
+.fade-8{
+    animation-delay: 0.8s;
+
+}
+
+.fade-9{
+    animation-delay: 0.9s;
+
+}
