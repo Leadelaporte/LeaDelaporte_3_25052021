@@ -5,7 +5,7 @@
     <title>OhMyFood-À la française</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="scss/menu3styles.css"/>
     <script src="https://kit.fontawesome.com/44083493f0.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,38 +19,62 @@
         </div>
     </header>
 
-    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo du restaurant À la française"/>
+    <div class="background"></div>
 
     <section class="menu">
         <div class="menu__tilte">
             <h1>À la française</h1>
-            <i class="far fa-heart"></i>
+            <div class="box__heart">
+                <i class="fas fa-heart"></i>
+                <i class="far fa-heart"></i>
+            </div>
         </div>
         <div class="menu__starters">
             <p>ENTRÉES</p>
         </div>
         <div class="menu__box">
-            <div class="box">
-                <h2>Tartare de poulpe acidulé</h2>
-                <p>Aux zestes d'orange</p>
-                <div class="box__price">
-                    <h2>25€</h2>
+            <div class="box fade-1">
+                <div class="box__menu">
+                    <div class="box__menu--menu">
+                        <h2>Tartare de poulpe acidulé</h2>
+                        <p>Aux zestes d'orange</p>
+                    </div>
+                    <div class="box__price">
+                        <h2>25€</h2>
+                    </div>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="box">
-                <h2>Velouté de légumes d'antan</h2>
-                <p>Carotte, panais, topinambourg</p>
-                <div class="box__price">
-                    <h2>35€</h2>
+            <div class="box fade-2">
+                <div class="box__menu">
+                    <div class="box__menu--menu">
+                        <h2>Velouté de légumes d'antan</h2>
+                        <p>Carotte, panais, topinambourg</p>
+                    </div>
+                    <div class="box__price">
+                        <h2>35€</h2>
+                    </div>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="box">
-                <h2>Soupe à l'oignon</h2>
-                <p>Revisitée</p>
-                <div class="box__price">
-                    <h2>20€</h2>
+            <div class="box fade-3">
+                <div class="box__menu ">
+                    <div class="box__menu--menu">
+                        <h2>Soupe à l'oignon</h2>
+                        <p>Revisitée</p>
+                    </div>
+                    <div class="box__price">
+                        <h2>20€</h2>
+                    </div>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
 
@@ -59,27 +83,48 @@
             <p>PLATS</p>
         </div>
         <div class="menu__box">
-            <div class="box">
-                <h2>Coquilles Saint-Jacques</h2>
-                <p>Accompagné d'une purée de panais</p>
-                <div class="box__price">
-                    <h2>40€</h2>
+            <div class="box fade-4">
+                <div class="box__menu">
+                    <div class="box__menu--menu">
+                        <h2>Coquilles Saint-Jacques</h2>
+                        <p>Accompagné d'une purée de panais</p>
+                    </div>
+                    <div class="box__price">
+                        <h2>40€</h2>
+                    </div>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="box">
-                <h2>Magret de canard</h2>
-                <p>Et parmentier de pommes de terre</p>
-                <div class="box__price">
-                    <h2>35€</h2>
+            <div class="box fade-5">
+                <div class="box__menu">
+                    <div class="box__menu--menu">
+                        <h2>Magret de canard</h2>
+                        <p>Et parmentier de pommes de terre</p>
+                    </div>
+                    <div class="box__price">
+                        <h2>35€</h2>
+                    </div>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="box">
-                <h2>Pigeonneau d'Ille-et-Vilaine</h2>
-                <p>Sur son lit de gnocchis aux légumes</p>
-                <div class="box__price">
-                    <h2>44€</h2>
+            <div class="box fade-6">
+                <div class="box__menu">
+                    <div class="box__menu--menu">
+                        <h2>Pigeonneau d'Ille-et-Vilaine</h2>
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                    </div>
+                    <div class="box__price">
+                        <h2>44€</h2>
+                    </div>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
 
@@ -88,27 +133,48 @@
             <p>DESSERTS</p>
         </div>
         <div class="menu__box">
-            <div class="box">
-                <h2>Pétales de violettes glacés</h2>
-                <p>Et purée de noisettes</p>
-                <div class="box__price">
-                    <h2>18€</h2>
+            <div class="box fade-7">
+                <div class="box__menu">
+                    <div class="box__menu--menu">
+                    <h2>Pétales de violettes glacés</h2>
+                    <p>Et purée de noisettes</p>
+                </div>
+                    <div class="box__price">
+                        <h2>18€</h2>
+                    </div>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="box">
-                <h2>Fondant au chocolat</h2>
-                <p>Revisité</p>
-                <div class="box__price">
-                    <h2>22€</h2>
+            <div class="box fade-8">
+                <div class="box__menu">
+                    <div class="box__menu--menu">
+                        <h2>Fondant au chocolat</h2>
+                        <p>Revisité</p>
+                    </div>
+                    <div class="box__price">
+                        <h2>22€</h2>
+                    </div>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="box">
-                <h2>Millefeuille croustillant</h2>
-                <p>Myrtilles et pâte d'amande</p>
-                <div class="box__price">
-                    <h2>23€</h2>
+            <div class="box fade-9">
+                <div class="box__menu">
+                    <div class="box__menu--menu">
+                        <h2>Millefeuille croustillant</h2>
+                        <p>Myrtilles et pâte d'amande</p>
+                    </div>
+                    <div class="box__price">
+                        <h2>23€</h2>
+                    </div>
+                    <div class="validation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
 
