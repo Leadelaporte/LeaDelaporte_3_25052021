@@ -19,11 +19,15 @@ a:visited{
     color: black;
 }
 
+/* HEADER */
+
 header{
     display: flex;
     justify-content: center;
     padding-top: 1em;
 }
+
+/* EXPLORER */ 
 
 .explore__search{
     display: flex;
@@ -75,6 +79,8 @@ button:hover{
         @include buttonhover
 }
 
+/* FONCTIONNEMENT */ 
+
 .function__title{
     padding-top: 1em;
     padding-left: 1em;
@@ -114,6 +120,8 @@ button:hover{
 .card:hover .card__icon{
     color: $primary-color;
 }
+
+/* RESTAURANTS */ 
 
 .restaurants{
     background-color: #F2F2F2;
@@ -174,6 +182,8 @@ button:hover{
     padding: 0 0.5em 0 0.5em;
 }
 
+/* FOOTER */ 
+
 footer{
     background-color: #3a3d3b;
     color: white;
@@ -201,7 +211,7 @@ footer{
     }
 }
 
-
+/* ANIMATION COEUR */
 
 .box__heart .fas{
     color:$secondary-color;
@@ -224,6 +234,8 @@ footer{
     opacity: 1;
     -webkit-transition:.4s ease-in-out;
 }
+
+/* LOADER */ 
 
 .animation{
     width: 100%;
@@ -304,6 +316,8 @@ footer{
     }
 }
 
+/* MEDIA QUERIES */ 
+
 @media screen and (min-width: 768px) and (max-width: 1099px)
 {
     .function{
@@ -344,6 +358,14 @@ footer{
         margin-right: 2em;
     }
 
+    .card:hover{
+        background-color: rgba(147,86,220,0.2);
+    }
+    
+    .card:hover .card__icon{
+        color: $primary-color;
+    }
+    
     .restaurants{
         background-color: #F2F2F2;
         margin-top: 2em;
@@ -400,6 +422,7 @@ footer{
     
     .function__card{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         width: 100%;
         margin: auto;
@@ -422,7 +445,15 @@ footer{
     
     .card__icon{
         color: #a7a7a7;
-        margin-right: 2em;
+        margin-right: 1em;
+    }
+
+    .card:hover{
+        background-color: rgba(147,86,220,0.2);
+    }
+    
+    .card:hover .card__icon{
+        color: $primary-color;
     }
     
     .restaurants{

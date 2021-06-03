@@ -16,12 +16,14 @@ a:visited {
   color: black;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: center;
   padding-top: 1em;
 }
 
+/* EXPLORER */
 .explore__search {
   display: flex;
   align-items: center;
@@ -86,6 +88,7 @@ button:hover {
   box-shadow: 8px 8px 12px #727171;
 }
 
+/* FONCTIONNEMENT */
 .function__title {
   padding-top: 1em;
   padding-left: 1em;
@@ -126,6 +129,7 @@ button:hover {
   color: #9356DC;
 }
 
+/* RESTAURANTS */
 .restaurants {
   background-color: #F2F2F2;
   margin-top: 2em;
@@ -185,6 +189,7 @@ button:hover {
   padding: 0 0.5em 0 0.5em;
 }
 
+/* FOOTER */
 footer {
   background-color: #3a3d3b;
   color: white;
@@ -209,6 +214,7 @@ footer a:visited {
   padding-bottom: 0.9em;
 }
 
+/* ANIMATION COEUR */
 .box__heart .fas {
   color: #FF79DA;
   display: block;
@@ -228,6 +234,7 @@ footer a:visited {
   -webkit-transition: 0.4s ease-in-out;
 }
 
+/* LOADER */
 .animation {
   width: 100%;
   height: 100%;
@@ -328,6 +335,7 @@ footer a:visited {
     visibility: hidden;
   }
 }
+/* MEDIA QUERIES */
 @media screen and (min-width: 768px) and (max-width: 1099px) {
   .function {
     display: flex;
@@ -365,6 +373,14 @@ footer a:visited {
   .card__icon {
     color: #a7a7a7;
     margin-right: 2em;
+  }
+
+  .card:hover {
+    background-color: rgba(147, 86, 220, 0.2);
+  }
+
+  .card:hover .card__icon {
+    color: #9356DC;
   }
 
   .restaurants {
@@ -423,6 +439,7 @@ footer a:visited {
 
   .function__card {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     margin: auto;
@@ -445,7 +462,15 @@ footer a:visited {
 
   .card__icon {
     color: #a7a7a7;
-    margin-right: 2em;
+    margin-right: 1em;
+  }
+
+  .card:hover {
+    background-color: rgba(147, 86, 220, 0.2);
+  }
+
+  .card:hover .card__icon {
+    color: #9356DC;
   }
 
   .restaurants {
