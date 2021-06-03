@@ -75,21 +75,15 @@ button:hover{
         @include buttonhover
 }
 
-.function{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .function__title{
     padding-top: 1em;
+    padding-left: 1em;
 }
 
 .function__card{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    margin: auto;
     .card{
         background-color: #F2F2F2;
         padding: 1em;
@@ -101,7 +95,8 @@ button:hover{
             color: white;
             padding: 0.2em 0.5em 0.2em 0.5em;
             border-radius: 60px;
-            font-size: 1.3em;
+            font-size: 0.8em;
+            margin-left: -1.7em;
             margin-right: 1em;
         }
     }
@@ -113,7 +108,7 @@ button:hover{
 
 .card__icon{
     color: #a7a7a7;
-    margin-right: 2em;
+    margin-right: 1em;
 }
 
 .card:hover .card__icon{
@@ -128,20 +123,14 @@ button:hover{
         padding-top: 1em;
         padding-left: 1em;
     }
-    .restaurants__box{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
 
 .box{
     background-color: white;
-    margin: 1em 1em 1em 1.2em;
+    margin: 0em 1em 1em 1em;
     border-radius: 15px;
     position: relative;
     box-shadow: 4px 4px 6px #bbbaba;
-    width: 45%;
     img{
         width: 100%;
         height: 8em;
@@ -199,6 +188,10 @@ footer{
         font-family: "Shrikhand", cursive;
         font-size: 1em;
     }
+    a:visited{
+            color: white;
+    }
+    
 }
 
 .footer__link{
@@ -208,9 +201,7 @@ footer{
     }
 }
 
-.footer a:visited{
-    color: white;
-}
+
 
 .box__heart .fas{
     color:$secondary-color;
@@ -311,4 +302,86 @@ footer{
         opacity: 0;
         visibility: hidden;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1099px)
+{
+    .function{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .function__title{
+        padding-top: 1em;
+    }
+
+    .function__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+        .card{
+            background-color: #F2F2F2;
+            padding: 1em;
+            border-radius: 60px;
+            margin: 0 1em 1em 1em;
+            box-shadow:4px 4px 6px #bbbaba; ;
+            .card__number{
+                background-color: $primary-color;
+                color: white;
+                padding: 0.2em 0.5em 0.2em 0.5em;
+                border-radius: 60px;
+                font-size: 1.3em;
+                margin-right: 1em;
+            }
+        }
+    }
+
+    .card__icon{
+        color: #a7a7a7;
+        margin-right: 2em;
+    }
+
+    .restaurants{
+        background-color: #F2F2F2;
+        margin-top: 2em;
+        padding-bottom: 2em;
+        .restaurants__title{
+            padding-top: 1em;
+            padding-left: 1em;
+        }
+        .restaurants__box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .box{
+        background-color: white;
+        margin: 1em 1em 1em 1.2em;
+        border-radius: 15px;
+        position: relative;
+        box-shadow: 4px 4px 6px #bbbaba;
+        width: 45%;
+        img{
+            width: 100%;
+            height: 8em;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            object-position: 50% 60%;
+        }
+        .box__img--text{
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            color: #487454;
+            background-color: #A4CCAE;
+            padding: 0.3em;
+            font-weight: bold;
+        }
+    }    
 }
