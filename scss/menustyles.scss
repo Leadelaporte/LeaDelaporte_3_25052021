@@ -361,6 +361,19 @@ footer{
     
         }
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        .footer__tilte{
+            display: flex;
+            justify-content: center;
+        }
+        .footer__link{
+            display: flex;
+            justify-content: center;
+        }
+    }
     
 }
 
@@ -403,5 +416,18 @@ footer{
     .menu__starters::after{
         @include aftermenu;
         top: 2.5em;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        .footer__tilte{
+            display: flex;
+            justify-content: center;
+        }
+        .footer__link{
+            display: flex;
+            justify-content: center;
+        }
     }
 }

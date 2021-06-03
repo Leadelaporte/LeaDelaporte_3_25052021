@@ -399,6 +399,19 @@ footer a:visited {
     text-overflow: ellipsis;
     overflow: hidden;
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__tilte {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer__link {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1100px) {
   .menu {
@@ -453,5 +466,18 @@ footer a:visited {
     position: absolute;
     top: 1.5em;
     top: 2.5em;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__tilte {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer__link {
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=menustyles.css.map */

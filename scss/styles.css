@@ -425,6 +425,19 @@ footer a:visited {
     padding: 0.3em;
     font-weight: bold;
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__tilte {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer__link {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1100px) {
   .function {
@@ -519,5 +532,18 @@ footer a:visited {
     background-color: #A4CCAE;
     padding: 0.3em;
     font-weight: bold;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__tilte {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer__link {
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=styles.css.map */
