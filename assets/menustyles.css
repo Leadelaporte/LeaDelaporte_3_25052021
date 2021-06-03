@@ -303,7 +303,7 @@ header {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(4em);
+    transform: scaleX(1);
   }
 }
 @keyframes slide {
@@ -311,7 +311,7 @@ header {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(4em);
+    transform: scaleX(1);
   }
 }
 @-webkit-keyframes slideprice {
