@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap");
+body {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "roboto", sans-serif;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.logo__return {
+  position: absolute;
+  left: 1.5em;
+  top: 1.5em;
+}
+
+/* IMAGE */
+.background {
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  height: 20em;
+}
+
+/* MENU */
+.menu {
+  background-color: #F2F2F2;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -4.5em;
+}
+.menu .menu__tilte {
+  padding-top: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.5em 0 1em;
+}
+.menu .menu__tilte p {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5em;
+}
+.menu .menu__tilte .far {
+  font-size: 1.5em;
+}
+.menu .menu__tilte .fas {
+  font-size: 1.5em;
+}
+
+.menu__starters {
+  position: relative;
+  padding-left: 1em;
+}
+
+.menu__starters::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #A4CCAE;
+  position: absolute;
+  top: 1.5em;
+}
+
+.menu__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  background: white;
+  border-radius: 15px;
+  width: 90%;
+  height: 4.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+}
+.box h2 {
+  font-size: 1em;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.box p {
+  margin-top: 0.5em;
+  font-size: 1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.box__menu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.5em;
+}
+
+.menu__dishes {
+  position: relative;
+  padding-left: 1em;
+}
+
+.menu__dishes::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #A4CCAE;
+  position: absolute;
+  top: 1.5em;
+}
+
+.menu__desserts {
+  position: relative;
+  padding-left: 1em;
+}
+
+.menu__desserts::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #A4CCAE;
+  position: absolute;
+  top: 1.5em;
+}
+
+.menu__button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3em;
+  padding-top: 1em;
+}
+
+.box__menu--menu {
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 1em;
+}
+
+.box__price {
+  padding-top: 1em;
+  margin-right: 0.5em;
+}
+
+/* ANIMATION COEUR */
+.box__heart .fas {
+  color: #FF79DA;
+  display: block;
+  background: -webkit-linear-gradient(#9356DC 40%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box__heart:hover .far {
+  opacity: 0;
+}
+
+.far {
+  position: absolute;
+  background-color: #F2F2F2;
+  opacity: 1;
+  -webkit-transition: 0.4s ease-in-out;
+  margin-top: -1em;
+}
+
+/* ANIMATION APPARITION MENU */
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.box {
+  -webkit-animation: FadeIn 2s both;
+          animation: FadeIn 2s both;
+}
+
+.fade-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.fade-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.fade-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.fade-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.fade-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.fade-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.fade-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.fade-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.fade-9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+/* ANIMATION VALIDATION MENU */
+.box .validation {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #A4CCAE;
+  height: 4.5em;
+  width: 4em;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.validation i {
+  font-size: 30px;
+  color: white;
+  -webkit-animation: rotate 1s;
+          animation: rotate 1s;
+}
+
+.box:hover .validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: slide 1s ease;
+          animation: slide 1s ease;
+  transform-origin: right;
+}
+
+.box:hover .box__price {
+  -webkit-animation: slideprice 1s both;
+          animation: slideprice 1s both;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes slideprice {
+  0% {
+    margin-right: 0;
+  }
+  100% {
+    margin-right: 5em;
+  }
+}
+@keyframes slideprice {
+  0% {
+    margin-right: 0;
+  }
+  100% {
+    margin-right: 5em;
+  }
+}
+/* BOUTTON */
+button {
+  border: 1px;
+  border-radius: 60px;
+  padding: 1em 3em 1em 3em;
+  color: white;
+  background: linear-gradient(#FF79DA 20%, #9356DC 100%);
+  box-shadow: 4px 4px 6px #bbbaba;
+}
+
+button:hover {
+  filter: brightness(110%);
+  box-shadow: 8px 8px 12px #727171;
+}
+
+/* FOOTER */
+footer {
+  background-color: #3a3d3b;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+footer a {
+  color: white;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1em;
+}
+
+.footer__link i {
+  padding-right: 1em;
+  padding-bottom: 0.9em;
+}
+
+.footer a:visited {
+  color: white;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+  .menu {
+    margin-top: -2em;
+  }
+
+  .box {
+    background: white;
+    border-radius: 15px;
+    width: 70%;
+    height: 4.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    white-space: nowrap;
+    display: block;
+    position: relative;
+  }
+  .box h2 {
+    font-size: 1em;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .box p {
+    margin-top: 0.5em;
+    font-size: 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__tilte {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer__link {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .menu {
+    margin-top: -1.5em;
+  }
+  .menu .menu__tilte {
+    display: flex;
+    justify-content: center;
+  }
+  .menu .menu__tilte p {
+    padding-right: 1em;
+  }
+
+  .box {
+    width: 350px;
+  }
+
+  .menu__tilte--box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1em;
+  }
+
+  .menu__tilte--boxcomplet {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+  }
+
+  .menu__desserts::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #A4CCAE;
+    position: absolute;
+    top: 1.5em;
+    top: 2.5em;
+  }
+
+  .menu__dishes::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #A4CCAE;
+    position: absolute;
+    top: 1.5em;
+    top: 2.5em;
+  }
+
+  .menu__starters::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #A4CCAE;
+    position: absolute;
+    top: 1.5em;
+    top: 2.5em;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__tilte {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer__link {
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=menu3styles.css.map */
