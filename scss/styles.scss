@@ -463,6 +463,8 @@ footer{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
         .restaurants__title{
             padding-top: 1em;
             padding-left: 1em;

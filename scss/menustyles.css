@@ -404,20 +404,25 @@ footer a:visited {
   .menu {
     margin-top: -1.5em;
   }
-
-  .menu__tilte {
-    padding: 0 28em 0 28em;
+  .menu .menu__tilte {
+    display: flex;
+    justify-content: center;
+  }
+  .menu .menu__tilte p {
+    padding-right: 1em;
   }
 
   .menu__tilte--box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 1em;
   }
 
   .menu__tilte--boxcomplet {
     display: flex;
     justify-content: center;
+    padding-bottom: 2em;
   }
 
   .menu__desserts::after {
