@@ -32,7 +32,7 @@ header {
 
 /* IMAGE */
 .background {
-  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -369,4 +369,120 @@ footer h2 {
 
 .footer a:visited {
   color: white;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+  .menu {
+    margin-top: -2em;
+  }
+
+  .box {
+    background: white;
+    border-radius: 15px;
+    width: 70%;
+    height: 4.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    white-space: nowrap;
+    display: block;
+    position: relative;
+  }
+  .box h2 {
+    font-size: 1em;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .box p {
+    margin-top: 0.5em;
+    font-size: 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__tilte {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer__link {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .menu {
+    margin-top: -1.5em;
+  }
+  .menu .menu__tilte {
+    display: flex;
+    justify-content: center;
+  }
+  .menu .menu__tilte p {
+    padding-right: 1em;
+  }
+
+  .box {
+    width: 350px;
+  }
+
+  .menu__tilte--box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1em;
+  }
+
+  .menu__tilte--boxcomplet {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+  }
+
+  .menu__desserts::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #A4CCAE;
+    position: absolute;
+    top: 1.5em;
+    top: 2.5em;
+  }
+
+  .menu__dishes::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #A4CCAE;
+    position: absolute;
+    top: 1.5em;
+    top: 2.5em;
+  }
+
+  .menu__starters::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #A4CCAE;
+    position: absolute;
+    top: 1.5em;
+    top: 2.5em;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__tilte {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer__link {
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=menu3styles.css.map */

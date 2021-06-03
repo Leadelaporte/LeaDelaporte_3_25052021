@@ -425,6 +425,10 @@ footer a:visited {
     padding-right: 1em;
   }
 
+  .box {
+    width: 350px;
+  }
+
   .menu__tilte--box {
     display: flex;
     flex-direction: column;
