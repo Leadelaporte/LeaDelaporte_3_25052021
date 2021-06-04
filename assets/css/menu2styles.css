@@ -73,7 +73,7 @@ header {
   content: "";
   width: 40px;
   height: 3px;
-  background: #A4CCAE;
+  background: #99E2D0;
   position: absolute;
   top: 1.5em;
 }
@@ -123,7 +123,7 @@ header {
   content: "";
   width: 40px;
   height: 3px;
-  background: #A4CCAE;
+  background: #99E2D0;
   position: absolute;
   top: 1.5em;
 }
@@ -137,7 +137,7 @@ header {
   content: "";
   width: 40px;
   height: 3px;
-  background: #A4CCAE;
+  background: #99E2D0;
   position: absolute;
   top: 1.5em;
 }
@@ -258,7 +258,7 @@ header {
   display: none;
   position: absolute;
   right: 0;
-  background-color: #A4CCAE;
+  background-color: #99E2D0;
   height: 4.5em;
   width: 4em;
   border-top-right-radius: 15px;
@@ -452,7 +452,7 @@ footer h2 {
     content: "";
     width: 40px;
     height: 3px;
-    background: #A4CCAE;
+    background: #99E2D0;
     position: absolute;
     top: 1.5em;
     top: 2.5em;
@@ -462,7 +462,7 @@ footer h2 {
     content: "";
     width: 40px;
     height: 3px;
-    background: #A4CCAE;
+    background: #99E2D0;
     position: absolute;
     top: 1.5em;
     top: 2.5em;
@@ -472,7 +472,7 @@ footer h2 {
     content: "";
     width: 40px;
     height: 3px;
-    background: #A4CCAE;
+    background: #99E2D0;
     position: absolute;
     top: 1.5em;
     top: 2.5em;
